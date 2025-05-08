@@ -1,0 +1,44 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  
+
+ 
+}
+.navbar_logo {
+  border: 1px solid #874F42;
+  width: 50px;
+  height: 50px;
+  border-radius: 200px;
+  margin-right: 6rem;
+}
+.navbar_lists {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin: 0;
+  padding: 1rem 10rem;
+  align-items: center;
+  border: 1px solid #874F42;
+  border-radius: 16px;
+
+}
+
+.navbar_lists li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  color: #874F42;
+  
+}
+
+.navbar_lists li a:hover {
+  color: #00b7ff;
+}
+
