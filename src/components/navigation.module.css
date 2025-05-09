@@ -3,9 +3,6 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  
-
- 
 }
 .navbar_logo {
   border: 1px solid #874F42;
@@ -39,6 +36,6 @@
 }
 
 .navbar_lists li a:hover {
-  color: #00b7ff;
+  color: #244856;
 }
 

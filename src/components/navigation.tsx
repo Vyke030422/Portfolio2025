@@ -7,22 +7,25 @@ export default function Navigation() {
       <div className={style.navbar_logo}></div>
       <ul className={style.navbar_lists}>
         <li className="nav-item">
-          <a href="#home">Home</a>
+          <a href="/">Home</a>
         </li>
         <li className="nav-item">
-          <a href="#about">About</a>
+          <a href="/about">About</a>
         </li>
         <li className="nav-item">
           <a href="#CV">CV</a>
         </li>
         <li className="nav-item">
+          <a href="#projects">Works</a>
+        </li>
+        <li className="nav-item">
           <a href="#contact">Contact</a>
         </li>
         <li className={style.navbar_Linkedin}>
-          <a href="#Linkedin"><Linkedin /></a>
+          <a href="https://www.linkedin.com/in/kevin-intong-ab424b323/"><Linkedin /></a>
         </li>
         <li className={style.navbar_Facebook}>
-          <a href="#Facebook"><Facebook/></a>
+          <a href="https://www.facebook.com/profile.php?id=61572670653715"><Facebook/></a>
         </li>
         <li className={style.navbar_Instagram}>
           <a href="#Instagram"><Instagram/></a>
