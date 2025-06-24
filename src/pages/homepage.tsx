@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react";
 import CardImage from "../components/cardimage";
 import Navigation from "../components/navigation";
 import style from "./homepage.module.css";
@@ -5,6 +6,22 @@ import { FacebookIcon, LinkedinIcon, InstagramIcon } from "lucide-react";
 import Footer from "../components/footer";
 
 export default function HomePage() {
+  const [designerRole, setDesignerRole] = useState("UX Designer");
+  const [fade, setFade] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false); // Start fade out
+      setTimeout(() => {
+        setDesignerRole((prev) =>
+          prev === "UX Designer" ? "Visual Designer" : "UX Designer"
+        );
+        setFade(true); // Fade in new text
+      }, 400); // Duration matches CSS fade-out
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       <header className={style.Header}>
@@ -14,7 +31,11 @@ export default function HomePage() {
         <section className={style.Main} id="home">
           <div className={style.Main_Section_Titles}>
             <h1 className={style.Intro1}>Hi! I’m Kevin</h1>
-            <h1 className={style.Intro2}>A UX Designer</h1>
+            <h1
+              className={`${style.Intro2} ${fade ? style.FadeIn : style.FadeOut}`}
+            >
+              {designerRole}
+            </h1>
             <p className={style.Tagline}>
               In every design, I aim to explore, the beauty of less, where less is more.
             </p>
@@ -65,6 +86,23 @@ export default function HomePage() {
                 <div className={style.Works_ProjectDetails}>
                   <span className={style.ProjectNumber}>02</span>
                   <h2 className={style.ProjectTitle}>Island Boi</h2>
+                  <div className={style.ProjectRole}>UI/UX Web Designer</div>
+                  <div className={style.ProjectDescription}>
+                    A website for a tropical resort, focused on seamless booking and immersive travel experiences.
+                  </div>
+                  <button className={style.ReadCaseStudyBtn}>Read Case Study</button>
+                </div>
+              </div>
+               {/* Project 3 */}
+              <div className={style.Works_CardRow}>
+                <CardImage
+                  image="src/assets/images/IslandBoi.png"
+                  imageAlt="Island Boi"
+                  badge="Travel & Hospitality Website UX"
+                />
+                <div className={style.Works_ProjectDetails}>
+                  <span className={style.ProjectNumber}>03</span>
+                  <h2 className={style.ProjectTitle}>MindSpace</h2>
                   <div className={style.ProjectRole}>UI/UX Web Designer</div>
                   <div className={style.ProjectDescription}>
                     A website for a tropical resort, focused on seamless booking and immersive travel experiences.

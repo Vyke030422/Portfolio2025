@@ -12,7 +12,7 @@ export default function Footer() {
       marginTop: "4rem",
       background: "#fff"
     }}>
-      Powered by Kevaura
+      Powered by Kevsthetics
     </footer>
   );
 }
