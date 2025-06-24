@@ -2,63 +2,215 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #fbe9d1;
+  background-color: #fff;
 }
 
-.Main {
-  display: flex;
-  height: 100vh;
+.Header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fff;
 }
 
+/* Main Section Titles */
 .Main_Section_Titles {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 0.5rem;
-  font-size: 3rem;
-  font-family: Poppins, sans-serif;
-  margin: 0 15rem 0 15rem;
-  color: #874f42;
+  margin-top: 15rem;
+  margin-bottom: 20rem;
+  font-family: 'Poppins', sans-serif;
+  color: #9c5b4a;
+  font-weight: 700;
+  letter-spacing: 0.15em;
 }
-.Intro1 {
-  letter-spacing: 2rem;
-}
+
+.Intro1,
 .Intro2 {
-  letter-spacing: 1rem;
+  color: #9c5b4a;
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.2em;
 }
+
+.Intro2 {
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.18em;
+}
+
 .Tagline {
-  margin-top: 4rem;
-  font-size: 1.4rem;
-  font-family: Poppins, sans-serif;
-  letter-spacing: 1.4rem;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.60rem;
   line-height: 2.4rem;
-}
-.Header {
-  position: sticky;
-  top: 0;
-  z-index: 0;
-}
-.MoveDown {
-  margin-top: 7rem;
-  color: #874f42;
-  cursor: pointer;
-}
-.MoveDown:hover {
-  color: #244856;
-}
-.MoveDown:active {
-  transform: translateY(2px);
+  color: #b88b7a;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
 }
 
-/*Features Section*/
-
-.Features{
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  gap: 2rem;
-  margin: 0 15rem 0 15rem;
-  padding: 2rem;
+/* Socials Section */
+.Socials {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 2.2rem;
+  margin: 0;
+  padding: 0.5rem 0 0 0;
+}
+
+.SocialLink svg {
+  color: #9c5b4a;
+  width: 22px;
+  height: 22px;
+  transition: color 0.2s;
+}
+
+.SocialLink:hover svg {
+  color: #ff882e;
+}
+
+/* My Works Section */
+.MyWorks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.MyWorks_Section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Works_Title {
+  color: #9c5b4a;
+  font-size: 1.7rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+  margin-left: 0.95rem;
+  text-align: left;
+}
+
+.Works_Tagline {
+  color: #b88b7a;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  margin-left: 0.95rem;
+  text-align: left;
+}
+
+.Works_Cards {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.Works_CardRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+  background: none;
+}
+
+/* Card image styling */
+.card-image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  background: #f6f6f6;
+}
+
+/* Card details */
+.Works_ProjectDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.ProjectNumber {
+  color: #b88b7a;
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.ProjectTitle {
+  color: #984a3d;
+  font-size: 2.3rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  letter-spacing: 0.03em;
+}
+
+.ProjectRole {
+  color: #b88b7a;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0.7rem;
+}
+
+.ProjectDescription {
+  display: flex;
+  color: #b88b7a;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1.2rem;
+  font-weight: 400;
+}
+
+.ReadCaseStudyBtn {
+  display: flex;
+  align-self: flex-end;
+  background: #ff882e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+  box-shadow: 0 2px 6px rgba(255,136,46,0.08);
+}
+
+.ReadCaseStudyBtn:hover {
+  background: #e06d13;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .Main_Section_Titles {
+    margin: 0.5rem 2rem;
+    font-size: 2.2rem;
+  }
+  .Works_CardRow {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .MyWorks_Section {
+    padding: 0 1rem;
+  }
+  .card-image {
+    max-width: 100%;
+  }
 }

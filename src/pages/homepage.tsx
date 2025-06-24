@@ -1,68 +1,82 @@
-import { MoveDown } from "lucide-react";
 import CardImage from "../components/cardimage";
 import Navigation from "../components/navigation";
 import style from "./homepage.module.css";
-import { Facebook, Linkedin, Instagram } from "lucide-react";
+import { FacebookIcon, LinkedinIcon, InstagramIcon } from "lucide-react";
+import Footer from "../components/footer";
+
 export default function HomePage() {
   return (
     <>
-      <div className={style.Header}>
+      <header className={style.Header}>
         <Navigation />
-      </div>
-      <section className={style.Main} id="home">
-        <div className={style.Main_Section_Titles}>
-          <h1 className={style.Intro1}>Hi! I’m Kevin</h1>
-          <h1 className={style.Intro2}>A UI/UX Designer</h1>
-          <p className={style.Tagline}>
-            In every design, I aim to explore, the beauty of less, where less is
-            more.
-          </p>
-          <div className={style.navbar_Linkedin}>
-            <a href="https://www.linkedin.com/in/kevin-intong-ab424b323/">
-              <Linkedin />
-            </a>
+      </header>
+      <main>
+        <section className={style.Main} id="home">
+          <div className={style.Main_Section_Titles}>
+            <h1 className={style.Intro1}>Hi! I’m Kevin</h1>
+            <h1 className={style.Intro2}>A UX Designer</h1>
+            <p className={style.Tagline}>
+              In every design, I aim to explore, the beauty of less, where less is more.
+            </p>
+            <div className={style.Socials}>
+              <a href="#Instagram" aria-label="Instagram" className={style.SocialLink}>
+                <InstagramIcon />
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=61572670653715" aria-label="Facebook" className={style.SocialLink}>
+                <FacebookIcon />
+              </a>
+              <a href="https://www.linkedin.com/in/kevin-intong-ab424b323/" aria-label="LinkedIn" className={style.SocialLink}>
+                <LinkedinIcon />
+              </a>
+            </div>
           </div>
-          <div className={style.navbar_Facebook}>
-            <a href="https://www.facebook.com/profile.php?id=61572670653715">
-              <Facebook />
-            </a>
+        </section>
+        <section className={style.MyWorks} id="my-works">
+          <div className={style.MyWorks_Section}>
+            <h1 className={style.Works_Title}>My Works</h1>
+            <p className={style.Works_Tagline}>
+              read through my case studies, have a look at final designs and try out prototypes I’ve built.
+            </p>
+            <div className={style.Works_Cards}>
+              {/* Project 1 */}
+              <div className={style.Works_CardRow}>
+                <CardImage
+                  image="src/assets/images/CancerLine.png"
+                  imageAlt="CancerLine Companion"
+                  badge="Health Care Mobile UX"
+                />
+                <div className={style.Works_ProjectDetails}>
+                  <span className={style.ProjectNumber}>01</span>
+                  <h2 className={style.ProjectTitle}>CancerLine Companion</h2>
+                  <div className={style.ProjectRole}>UI/UX Designer, Branding</div>
+                  <div className={style.ProjectDescription}>
+                    A mobile companion app that helps Filipino cancer patients and companions on their treatment journey.
+                  </div>
+                  <button className={style.ReadCaseStudyBtn}>Read Case Study</button>
+                </div>
+              </div>
+              {/* Project 2 */}
+              <div className={style.Works_CardRow}>
+                <CardImage
+                  image="src/assets/images/IslandBoi.png"
+                  imageAlt="Island Boi"
+                  badge="Travel & Hospitality Website UX"
+                />
+                <div className={style.Works_ProjectDetails}>
+                  <span className={style.ProjectNumber}>02</span>
+                  <h2 className={style.ProjectTitle}>Island Boi</h2>
+                  <div className={style.ProjectRole}>UI/UX Web Designer</div>
+                  <div className={style.ProjectDescription}>
+                    A website for a tropical resort, focused on seamless booking and immersive travel experiences.
+                  </div>
+                  <button className={style.ReadCaseStudyBtn}>Read Case Study</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className={style.navbar_Instagram}>
-            <a href="#Instagram">
-              <Instagram />
-            </a>
-          </div>
-          <div className={style.MoveDown}>
-            <MoveDown strokeWidth={2} />
-          </div>
-        </div>
-      </section>
-      <section className={style.Features} id="projects">
-        <CardImage
-          image="https://example.com/image1.jpg"
-          imageAlt="Project 1"
-          title="CancerLine Companion"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
-        <CardImage
-          image="https://example.com/image1.jpg"
-          imageAlt="Project 2"
-          title="ITSO"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
-        <CardImage
-          image="https://example.com/image1.jpg"
-          imageAlt="Project 3"
-          title="Island Boy"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
-        <CardImage
-          image="https://example.com/image1.jpg"
-          imageAlt="Project 4"
-          title="Mighty Might Motors"
-          description="A companion app."
-        />
-      </section>
+        </section>
+      </main>
+      <Footer />
     </>
   );
 }
