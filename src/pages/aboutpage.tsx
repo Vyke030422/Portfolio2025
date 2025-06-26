@@ -34,7 +34,9 @@ export default function AboutPage() {
             </p>
           </div>
           <div className={styles.AboutImageBlock}>
-            <img src={KevinImg} alt="Kevin Kurt Intong" />
+            <div className={styles.ImagePlaceholder}>
+              <img src={KevinImg} alt="Kevin Kurt Intong" />
+            </div>
           </div>
         </section>
 
