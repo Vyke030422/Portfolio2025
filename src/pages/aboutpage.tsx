@@ -49,7 +49,7 @@ export default function AboutPage() {
               <div className={styles.CertificateTitle}>Google UX Design Professional Certificate</div>
               <div className={styles.CertificateSubtitle}>2024 – 2025</div>
             </div>
-            <a className={styles.CertificateBtn} href="#" target="_blank" rel="noopener noreferrer">
+            <a className={styles.CertificateBtn} href="https://drive.google.com/file/d/1zzfSeVn4iRTD15DkkKDhHlK_j40pBQHY/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               View my Certificate
             </a>
           </div>
@@ -58,7 +58,7 @@ export default function AboutPage() {
               <div className={styles.CertificateTitle}>Google Developers Student Club Certificate</div>
               <div className={styles.CertificateSubtitle}>2023 – 2024</div>
             </div>
-            <a className={styles.CertificateBtn} href="#" target="_blank" rel="noopener noreferrer">
+            <a className={styles.CertificateBtn} href="https://drive.google.com/file/d/1Qe6VzbKW2WVx3UOdFj94_6yO_RCScFIx/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               View my Certificate
             </a>
           </div>
