@@ -1,36 +1,305 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.main{
-    display : flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+:root {
+  --font-main: 'Poppins', sans-serif;
+  --color-primary: #984a3d;
+  --color-secondary: #b88b7a;
+  --color-accent: #ff882e;
 
+  --color-muted: #faf7f6;
+  --color-shadow: rgba(136, 79, 66, 0.07);
+  --font-lg: 2.4rem;
+  --font-md: 1.3rem;
+  --font-sm: 1rem;
+  --font-xs: 0.95rem;
+  --radius: 14px;
+  --shadow: 0 2px 12px var(--color-shadow);
 }
-.Header{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+
+*,
+body,
+html {
+  font-family: var(--font-main), Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.AboutMain {
+  color: var(--color-primary);
+  padding-bottom: 4rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.HeaderSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 0 2.5rem 0;
+}
+
+.HeaderTitle {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  margin-bottom: 1.1rem;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.HeaderSubtitle {
+  font-size: 1.08rem;
+  color: var(--color-secondary);
+  text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 1.7;
+  margin-bottom: 2.2rem;
+  max-width: 480px;
+  font-weight: 400;
+}
+
+.AboutSection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+  max-width: 700px;
+  margin: 0 auto 3.5rem auto;
+  width: 100%;
+}
+
+.AboutTextBlock {
+  flex: 2;
+  max-width: 400px;
+  text-align: left;
+}
+
+.AboutImageBlock {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.ImagePlaceholder {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--color-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-shadow: var(--shadow);
+}
+
+.ImagePlaceholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.SectionDivider {
+  width: 100%;
+  max-width: 700px;
+  margin: 2.5rem auto;
+  border: none;
+  border-top: 1px solid #f3e7e2;
+}
+
+.SectionHeading {
+  font-size: 1.22rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 1.1rem;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+.AboutDescription {
+  font-size: 1.02rem;
+  color: #7a5a4a;
+  line-height: 1.7;
+  font-weight: 400;
+  margin-top: 0.3rem;
+}
+
+.CertificatesSection,
+.AwardsSection {
+  max-width: 700px;
+  margin: 0 auto 3.5rem auto;
+  padding: 0;
+  width: 100%;
+}
+
+.CertificateRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 1.1rem;
+  padding: 1rem 1.2rem;
+  box-shadow: none;
+  border: 1px solid #f6f2f0;
+}
+
+.CertificateTitle,
+.AwardTitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.01em;
+}
+
+.CertificateSubtitle {
+  font-size: 0.95rem;
+  color: var(--color-secondary);
+  font-weight: 400;
+  margin-bottom: 0.1rem;
+}
+
+.CertificateBtn {
+  background: var(--color-accent);
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 0.42rem 1.1rem;
+  font-size: 0.97rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.18s;
+  box-shadow: 0 2px 6px rgba(255,136,46,0.06);
+  margin-left: 1.2rem;
+}
+.CertificateBtn:hover {
+  background: #e06d13;
+}
+
+.AwardRow {
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+  margin-bottom: 2.5rem;
+  justify-content: flex-start;
+}
+
+.AwardRowReverse {
+  flex-direction: row-reverse;
+}
+
+.AwardImage {
+  width: 200px;
+  height: 260px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-muted);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  flex-shrink: 0;
+  border: none;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.AwardImage:hover {
+  box-shadow: 0 6px 32px var(--color-shadow);
+  transform: scale(1.03);
+}
+
+.AwardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  transition: filter 0.2s;
+}
+.AwardImage:hover img {
+  filter: brightness(0.95);
+}
+
+.AwardContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 380px;
+  text-align: left;
+}
+
+.AwardDesc {
+  font-size: 0.97rem;
+  color: var(--color-secondary);
+  line-height: 1.6;
+  font-weight: 400;
+  margin-top: 0.1rem;
+}
+
+.LightboxOverlay {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(30, 20, 15, 0.88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.2s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.LightboxImg {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 18px;
+  box-shadow: 0 8px 48px rgba(0,0,0,0.25);
+  background: #fff;
+  object-fit: contain;
+  border: 2px solid #fff;
+  transition: box-shadow 0.2s;
+  cursor: zoom-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .AboutMain {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .AboutSection,
+  .CertificatesSection,
+  .AwardsSection {
     flex-direction: column;
-    font-size: 2rem;
-    font-family: Poppins, sans-serif;
-    font-weight: 600;
-    color: #874F42;
-    margin: 0;
-    padding: 0;
-    margin: 0 20rem 0 20rem;
-    height: 100vh;
-}
-.Header h1{
-    font-size: 3rem;
-    color: #874F42;
-}
-.Header p{
-    font-size: 1.5rem;
-    color: #874F42;
-    margin-top: 1rem;
-    text-align: center;
+    max-width: 100%;
+    gap: 2rem;
+  }
+  .AboutImageBlock,
+  .ImagePlaceholder,
+  .AwardImage {
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
+    min-height: 120px;
+  }
+  .AwardContent,
+  .AboutTextBlock {
+    max-width: 100%;
+  }
+  .AwardImage {
+    width: 120px;
+    height: 160px;
+    min-width: 120px;
+    min-height: 160px;
+  }
+  .LightboxImg {
+    max-width: 98vw;
+    max-height: 70vh;
+  }
 }

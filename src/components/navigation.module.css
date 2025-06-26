@@ -2,6 +2,22 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --font-main: 'Poppins', sans-serif;
+  --color-primary: #984a3d;
+  --color-secondary: #b88b7a;
+  --color-accent: #ff882e;
+  --color-bg: #fff;
+  --color-muted: #faf7f6;
+  --color-shadow: rgba(136, 79, 66, 0.07);
+  --font-lg: 2.4rem;
+  --font-md: 1.3rem;
+  --font-sm: 1rem;
+  --font-xs: 0.95rem;
+  --radius: 14px;
+  --shadow: 0 2px 12px var(--color-shadow);
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -34,7 +50,7 @@ html {
 .navbar_lists li a {
   text-decoration: none;
   color: #9c5b4a;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   transition: color 0.3s ease;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;

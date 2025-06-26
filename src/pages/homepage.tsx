@@ -4,11 +4,13 @@ import Navigation from "../components/navigation";
 import style from "./homepage.module.css";
 import { FacebookIcon, LinkedinIcon, InstagramIcon } from "lucide-react";
 import Footer from "../components/footer";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function HomePage() {
   const [designerRole, setDesignerRole] = useState("UX Designer");
   const [fade, setFade] = useState(true);
+
+  const location = useLocation();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -22,6 +24,15 @@ export default function HomePage() {
     }, 3000);
     return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+    if (location.hash === "#my-works") {
+      const el = document.getElementById("my-works");
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
 
   return (
     <>
@@ -93,24 +104,41 @@ export default function HomePage() {
                   <div className={style.ProjectDescription}>
                     A website for a tropical resort, focused on seamless booking and immersive travel experiences.
                   </div>
-                  <button className={style.ReadCaseStudyBtn}>Read Case Study</button>
+                 
+                  <a
+                    href="https://www.figma.com/proto/MDrZtXMUuArd9rGhfpQlpp/Project-IB-Design?page-id=0%3A1&node-id=1-4&viewport=279%2C308%2C0.4&t=k42wnQxMltYl5XIU-1&scaling=min-zoom&content-scaling=fixed"
+                    className={style.ReadCaseStudyBtn}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ marginTop: "0.5rem" ,textDecoration: "none"}}
+                  >
+                    View Prototype
+                  </a>
                 </div>
               </div>
                {/* Project 3 */}
               <div className={style.Works_CardRow}>
                 <CardImage
-                  image="src/assets/images/IslandBoi.png"
+                  image="src/assets/images/MindSpace.png"
                   imageAlt="Island Boi"
-                  badge="Travel & Hospitality Website UX"
+                  badge="Health & Wellness technology mobile UX"
                 />
                 <div className={style.Works_ProjectDetails}>
                   <span className={style.ProjectNumber}>03</span>
                   <h2 className={style.ProjectTitle}>MindSpace</h2>
-                  <div className={style.ProjectRole}>UI/UX Web Designer</div>
+                  <div className={style.ProjectRole}>UI/UX Designer Mobile</div>
                   <div className={style.ProjectDescription}>
-                    A website for a tropical resort, focused on seamless booking and immersive travel experiences.
+                    MindSpace is a mental wellness app offering guided meditations, mood tracking, and journaling with a calming teal-to-green design, guiding users from onboarding to logout via an intuitive interface.
                   </div>
-                  <button className={style.ReadCaseStudyBtn}>Read Case Study</button>
+                  {/* <a
+                    href="https://www.figma.com/proto/MDrZtXMUuArd9rGhfpQlpp/Project-IB-Design?page-id=0%3A1&node-id=1-4&viewport=279%2C308%2C0.4&t=k42wnQxMltYl5XIU-1&scaling=min-zoom&content-scaling=fixed"
+                    className={style.ReadCaseStudyBtn}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ marginTop: "0.5rem" ,textDecoration: "none"}}
+                  >
+                    View Prototype
+                  </a> */}
                 </div>
               </div>
             </div>

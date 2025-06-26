@@ -1,0 +1,176 @@
+.ContactMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-main);
+  color: var(--color-primary);
+  padding: 6rem 6rem 6rem 6rem;
+}
+
+.ContactLandscape {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 3rem auto;
+  background: var(--color-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  border: 1px solid #f3e7e2;
+  gap: 0; /* Remove any gap for a clean split */
+}
+
+.ContactInfo {
+  flex: 1;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 240px;
+  border-right: 1px solid #f3e7e2;
+}
+
+.ContactTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+
+.ContactSubtitle {
+  font-size: 1rem;
+  color: var(--color-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  text-align: left;
+  max-width: 320px;
+}
+
+.EmailLink {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.08rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.ContactSocials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2.2rem;
+  margin: 0;
+  padding: 0.5rem 0 0 0;
+}
+.ContactSocialLink svg {
+  color: #9c5b4a;
+  width: 30px;
+  height: 30px;
+  transition: color 0.2s;
+}
+
+.ContactSocialLink:hover svg {
+  color: #ff882e;
+}
+
+.ContactFormSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 2rem;
+  background: transparent;
+}
+
+.ContactForm {
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin: 0 auto;
+}
+
+.Label {
+  font-size: 1rem;
+  color: var(--color-primary);
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.Input,
+.Textarea {
+  font-family: var(--font-main);
+  font-size: 1rem;
+  padding: 0.6rem 1rem;
+  border: 1px solid #e6d8d2;
+  border-radius: var(--radius);
+  color: var(--color-primary);
+  background: #fff;
+  outline: none;
+  transition: border 0.18s;
+  resize: none;
+  box-shadow: none;
+}
+
+.Input:focus,
+.Textarea:focus {
+  border: 1.5px solid var(--color-accent);
+}
+
+.SubmitBtn {
+  background: var(--color-accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-family: var(--font-main);
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.3rem;
+  transition: background 0.18s;
+  align-self: flex-end;
+}
+.SubmitBtn:hover {
+  background: #e06d13;
+}
+
+.ThankYou {
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+  .ContactLandscape {
+    flex-direction: column;
+    max-width: 98vw;
+    margin: 1.5rem auto;
+  }
+  .ContactInfo,
+  .ContactFormSection {
+    padding: 1.5rem 1rem;
+    border-right: none;
+    border-bottom: 1px solid #f3e7e2;
+  }
+  .ContactFormSection {
+    border-bottom: none;
+    align-items: stretch;
+  }
+  .ContactForm {
+    max-width: 100%;
+  }
+}

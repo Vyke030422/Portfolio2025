@@ -48,13 +48,13 @@ export default function Navigation() {
       </div>
       <ul className={style.navbar_lists}>
         <li className="nav-item">
-          <a href="#my-works">Work</a>
+          <Link to="/#my-works">Work</Link>
         </li>
         <li className="nav-item">
           <a href="/about">About</a>
         </li>
         <li className="nav-item">
-          <a href="#contact">Contact</a>
+          <a href="/contactpage">Contact</a>
         </li>
       </ul>
     </nav>

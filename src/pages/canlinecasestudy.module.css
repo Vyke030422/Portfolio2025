@@ -1,10 +1,26 @@
+:root {
+  --font-main: 'Poppins', sans-serif;
+  --color-primary: #984a3d;
+  --color-secondary: #b88b7a;
+  --color-accent: #ff882e;
+  --color-bg: #fff;
+  --color-muted: #faf7f6;
+  --color-shadow: rgba(136, 79, 66, 0.07);
+  --font-lg: 2.4rem;
+  --font-md: 1.3rem;
+  --font-sm: 1rem;
+  --font-xs: 0.95rem;
+  --radius: 14px;
+  --shadow: 0 2px 12px var(--color-shadow);
+}
+
 .CaseStudyContainer {
   max-width: 900px;
   margin: 0 auto;
   padding: 3rem 1.5rem 0 1.5rem;
-  font-family: 'Poppins', sans-serif;
-  color: #9c5b4a;
-  background: #fff;
+  font-family: var(--font-main);
+  color: var(--color-primary);
+  background: var(--color-bg);
 }
 
 .CaseStudyHeaderRow {
@@ -22,23 +38,23 @@
 }
 
 .CaseStudyYear {
-  color: #F97F31;
+  color: var(--color-accent);
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: var(--font-sm);
   letter-spacing: 0.12em;
   margin-bottom: 2rem;
 }
 
 .CaseStudyTitle {
-  font-size: 2rem;
+  font-size: var(--font-lg);
   font-weight: 700;
   margin-bottom: 0.7rem;
-  color: #984a3d;
+  color: var(--color-primary);
   letter-spacing: 0.03em;
 }
 
 .CaseStudySubtitle {
-  color: #F97F31;
+  color: var(--color-accent);
   font-size: 0.8rem;
   margin-bottom: 1.2rem;
   font-weight: 500;
@@ -47,18 +63,18 @@
 
 .CaseStudyMeta {
   font-size: 1rem;
-  color: #b88b7a;
-  margin-bottom: 0.7rem;
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
   line-height: 2;
 }
 
 .CaseStudyButton {
-  background: #F97F31;
+  background: var(--color-accent);
   color: #fff;
   border: none;
   border-radius: 8px;
   padding: 0.7rem 1.5rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-main);
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
@@ -66,10 +82,11 @@
   transition: background 0.2s, box-shadow 0.2s;
   box-shadow: 0 2px 6px rgba(255,136,46,0.08);
   letter-spacing: 0.04em;
+  text-decoration: none;
 }
 
 .CaseStudyButton:hover {
-  background: #F97F31;
+  background: var(--color-accent);
   box-shadow: 0 4px 12px rgba(255,136,46,0.13);
 }
 
@@ -100,14 +117,14 @@
 .CaseStudySectionTitle {
   font-size: 1.08rem;
   font-weight: 700;
-  color: #984a3d;
+  color: var(--color-primary);
   margin-bottom: 1.1rem;
   letter-spacing: 0.02em;
   text-align: left;
 }
 
 .CaseStudySectionSubtitle {
-  color: #b88b7a;
+  color: var(--color-secondary);
   font-size: 1.02rem;
   margin-bottom: 0.7rem;
   font-weight: 500;
@@ -115,7 +132,7 @@
 }
 
 .CaseStudyText {
-  color: #7a7a7a;
+  color: var(--color-secondary);
   font-size: 1rem;
   margin-bottom: 1.5rem;
   font-weight: 400;
@@ -125,7 +142,7 @@
 
 .CaseStudyList {
   margin: 0.5rem 0 1.5rem 1.5rem;
-  color: #7a7a7a;
+  color: var(--color-secondary);
   font-size: 1rem;
   line-height: 1.7;
   text-align: left;
@@ -149,13 +166,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #b88b7a;
+  color: var(--color-secondary);
   min-width: 70px;
 }
 
 .CaseStudyProcessStepCircle {
-  border: 2px solid #F97F31;
-  color: #F97F31;
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
   background: #fff;
   border-radius: 50%;
   width: 38px;
@@ -175,7 +192,7 @@
   font-weight: 500;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #b88b7a;
+  color: var(--color-secondary);
 }
 
 .CaseStudyImageFull {
@@ -191,7 +208,7 @@
 
 .CaseStudyWireframeTitle {
   font-size: 1.08rem;
-  color: #b88b7a;
+  color: var(--color-secondary);
   font-weight: 600;
   margin: 2rem 0 1rem 0;
   letter-spacing: 0.03em;
@@ -216,12 +233,12 @@
 
 .CaseStudyTable th {
   background: #f6f6f6;
-  color: #b88b7a;
+  color: var(--color-secondary);
   font-weight: 700;
 }
 
 .CaseStudyTable td {
-  color: #984a3d;
+  color: var(--color-primary);
 }
 
 /* User Flow Diagram Styles */
@@ -263,8 +280,8 @@
 }
 
 .UserFlowBoxStart {
-  border-color: #F97F31;
-  color: #F97F31;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
   font-weight: 700;
   background: #fff7f0;
 }
@@ -277,8 +294,8 @@
 }
 
 .UserFlowBoxUniversal {
-  border-color: #b88b7a;
-  color: #b88b7a;
+  border-color: var(--color-secondary);
+  color: var(--color-secondary);
   background: #fff7f0;
   margin-top: 1.5rem;
   font-size: 0.97rem;
@@ -288,7 +305,7 @@
 
 .UserFlowNote {
   display: block;
-  color: #b88b7a;
+  color: var(--color-secondary);
   font-size: 0.92em;
   margin-top: 0.2em;
   font-weight: 400;
@@ -296,7 +313,7 @@
 
 .UserFlowArrow {
   font-size: 1.5em;
-  color: #b88b7a;
+  color: var(--color-secondary);
   margin: 0 0.2em;
   font-weight: 700;
   user-select: none;
@@ -305,7 +322,7 @@
 .UserFlowArrowDown {
   text-align: center;
   font-size: 1.3em;
-  color: #b88b7a;
+  color: var(--color-secondary);
   margin: 0.1em 0;
   font-weight: 700;
   user-select: none;
@@ -328,7 +345,7 @@
 
 .UserFlowCardTitle {
   font-weight: 700;
-  color: #F97F31;
+  color: var(--color-accent);
   margin-bottom: 0.3em;
   font-size: 1.05em;
   text-align: center;
@@ -384,22 +401,22 @@
 .UFStart,
 .UFHome,
 .UFCard {
-  border-color: #F97F31;
-  color: #F97F31;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
   background: #fff7f0;
   font-weight: 500;
 }
 
 .UFDecision {
   border-color: #f3e7e2;
-  color: #b88b7a;
+  color: var(--color-secondary);
   background: #fcf8f6;
   font-weight: 400;
 }
 
 .UFNote {
   display: block;
-  color: #b88b7a;
+  color: var(--color-secondary);
   font-size: 0.93em;
   margin-top: 0.18em;
   font-weight: 400;
@@ -416,7 +433,7 @@
 
 .UFUniversalBox {
   border-color: #f3e7e2;
-  color: #b88b7a;
+  color: var(--color-secondary);
   background: #fcf8f6;
   margin-top: 1.5rem;
   font-size: 0.97rem;
@@ -431,7 +448,7 @@
 .UFUniversalBox ul {
   margin: 0.5em 0 0 1.2em;
   padding: 0;
-  color: #b88b7a;
+  color: var(--color-secondary);
   font-size: 0.97rem;
 }
 
@@ -486,6 +503,171 @@
   align-items: center;
   flex: 1 1 0;
   min-width: 170px;
+}
+
+.IterationsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.IterationItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.1rem;
+
+  border: 1.5px solid #f3e7e2;
+  border-radius: 8px;
+  padding: 1.1em 1.2em;
+}
+
+.IterationIcon {
+  font-size: 1.7em;
+  color: var(--color-accent);
+  margin-top: 0.1em;
+  flex-shrink: 0;
+}
+
+.IterationFeedback {
+  color: var(--color-secondary);
+  font-size: 0.98em;
+  margin: 0.1em 0 0.2em 0;
+}
+
+.IterationQuote {
+  color: #ff882e;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.IterationSolution {
+  color: #9c5b4a;
+  font-size: 0.98em;
+  margin-top: 0.1em;
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.IterationArrow {
+  color: var(--color-accent);
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-right: 0.2em;
+}
+
+.IterationHighlight {
+  
+  color: var(--color-accent);
+  padding: 0.08em 0.35em;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.IterationNote {
+  color: var(--color-secondary);
+  font-size: 0.97em;
+  margin-top: 1.2em;
+  
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  border: 1px solid #f3e7e2;
+}
+
+.MoreProjectsSection {
+  margin: 4rem 0 2.5rem 0;
+  text-align: center;
+}
+.MoreProjectsTitle {
+  font-size: 1.3rem;
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: 0.03em;
+}
+.MoreProjectsGrid {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.MoreProjectCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #fff;
+  border: 1.5px solid #f3e7e2;
+  border-radius: 14px;
+  padding: 1.5rem 1.3rem 1.3rem 1.3rem;
+  text-decoration: none;
+  color: #9c5b4a;
+  width: 270px;
+  min-height: 420px;
+  box-shadow: 0 2px 12px rgba(249,127,49,0.06);
+  transition: box-shadow 0.18s, border-color 0.18s, transform 0.18s;
+  position: relative;
+}
+.MoreProjectCard:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 8px 32px rgba(249,127,49,0.13);
+  transform: translateY(-6px) scale(1.03);
+}
+.MoreProjectCard img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 10px;
+  margin-bottom: 1.1rem;
+  background: #fcf8f6;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  align-self: center;
+}
+.MoreProjectInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  flex: 1;
+}
+.MoreProjectName {
+  font-weight: 700;
+  font-size: 1.18rem;
+  color: var(--color-primary);
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.01em;
+}
+.MoreProjectRole {
+  font-size: 0.99rem;
+  color: var(--color-secondary);
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+}
+.MoreProjectDesc {
+  font-size: 0.97rem;
+  color: #7a7a7a;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  text-align: left;
+  flex: 1;
+}
+.MoreProjectBtn {
+  margin-top: auto;
+  background: #ff882e;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 0.55rem 1.2rem;
+  font-family: var(--font-main);
+  font-size: 0.98rem;
+  font-weight: 500;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.18s;
+  box-shadow: 0 2px 6px rgba(255,136,46,0.08);
+}
+.MoreProjectCard:hover .MoreProjectBtn {
+  background: #e06d13;
 }
 
 @media (max-width: 1100px) {
@@ -553,6 +735,190 @@
 
 .UFBox:hover {
   background: #fcf8f6;
-  border-color: #F97F31;
-  color: #F97F31;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.DesignProcessStickyWrapper {
+  position: sticky;
+  top: 64px; /* Adjust to your nav height */
+  z-index: 20;
+  background: #fff;
+  padding: 1.2rem 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(249,127,49,0.06);
+  animation: fadeInSticky 0.7s cubic-bezier(.4,0,.2,1);
+  transition: box-shadow 0.3s;
+}
+
+.DesignProcessBar {
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(249,127,49,0.06);
+  padding: 1.2rem 0;
+  margin-bottom: 2.5rem;
+  transition: box-shadow 0.3s;
+  animation: fadeInSticky 0.7s cubic-bezier(.4,0,.2,1);
+}
+
+.DesignProcessFixedBar {
+  position: fixed;
+  top: 64px; /* match your nav height */
+  left: 0;
+  width: 100vw;
+  background: #fff;
+  z-index: 100;
+  box-shadow: 0 4px 24px rgba(249,127,49,0.13);
+  border-bottom: 2px solid #f3e7e2;
+  padding: 1.2rem 0;
+  border-radius: 0 0 16px 16px;
+  animation: fadeInSticky 0.5s cubic-bezier(.4,0,.2,1);
+  display: flex;
+  justify-content: center;
+  transition: box-shadow 0.3s, border-bottom 0.3s;
+}
+
+@media (max-width: 700px) {
+  .DesignProcessFixedBar {
+    top: 48px;
+    padding: 0.7rem 0;
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+@keyframes fadeInSticky {
+  from {
+    opacity: 0;
+    transform: translateY(-16px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Optional: highlight the active step on scroll (JS needed for full effect) */
+.CaseStudyProcessStep:focus,
+.CaseStudyProcessStep[aria-current="step"] {
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #fff7f0, 0 0 0 6px var(--color-accent);
+  outline: none;
+}
+
+.DesignProcessSidebar {
+  position: fixed;
+  top: 100px; /* adjust for your header */
+  left: 32px;
+  z-index: 120;
+  background: none;
+  pointer-events: none;
+}
+
+.DesignProcessSidebarInner {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(249,127,49,0.13);
+  border: 1.5px solid #f3e7e2;
+  padding: 1.2rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  pointer-events: auto;
+  animation: fadeInSticky 0.5s cubic-bezier(.4,0,.2,1);
+}
+
+.DesignProcessBubble {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 120;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.BubbleFab {
+  background: #fff;
+  color: var(--color-accent);
+  border: 1.5px solid #f3e7e2;
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  font-size: 1.7rem;
+  box-shadow: 0 2px 12px rgba(140,95,194,0.07);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.BubbleFab:hover, .BubbleFab:focus {
+  background: #fff7f0;
+  border-color: var(--color-accent);
+  box-shadow: 0 4px 18px rgba(249,127,49,0.13);
+  outline: none;
+}
+
+.BubbleNav {
+  margin-bottom: 0.7rem;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(249,127,49,0.10);
+  border: 1.5px solid #f3e7e2;
+  padding: 0.7rem 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  animation: fadeInBubble 0.35s cubic-bezier(.4,0,.2,1);
+  min-width: 170px;
+}
+
+@keyframes fadeInBubble {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.BubbleNav .CaseStudyProcessStep {
+  flex-direction: row;
+  align-items: center;
+  min-width: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0.3em 0.5em;
+  border-radius: 8px;
+  transition: background 0.18s;
+  font-size: 1rem;
+  color: #9c5b4a;
+  justify-content: flex-start;
+}
+
+.BubbleNav .CaseStudyProcessStep:hover,
+.BubbleNav .CaseStudyProcessStep:focus {
+  background: #fff7f0;
+  color: var(--color-accent);
+  outline: none;
+}
+
+.BubbleNav .CaseStudyProcessStepCircle {
+  margin-bottom: 0;
+  margin-right: 0.7em;
+  font-size: 1em;
+  width: 28px;
+  height: 28px;
+  border-width: 1.5px;
+}
+
+.BubbleNav .CaseStudyProcessStepLabel {
+  font-size: 1em;
+  font-weight: 500;
+  color: inherit;
 }

@@ -19,12 +19,14 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 15rem;
-  margin-bottom: 20rem;
+  margin-top: 10rem;      /* Reduced from 9rem */
+  margin-bottom: 10rem;   /* Reduced from 20rem */
   font-family: 'Poppins', sans-serif;
   color: #9c5b4a;
   font-weight: 700;
   letter-spacing: 0.15em;
+  padding-left: 1.5rem;  /* Add horizontal padding for large screens */
+  padding-right: 1.5rem;
 }
 
 .Intro1,
@@ -84,27 +86,29 @@
 .MyWorks_Section {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 3rem auto;
+  padding-left: 2rem;    /* Increased for better alignment */
+  padding-right: 2rem;
 }
 
 .Works_Title {
   color: #9c5b4a;
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   margin-bottom: 0.5rem;
   letter-spacing: 0.05em;
-  margin-left: 0.95rem;
   text-align: left;
+  /* Removed margin-left */
 }
 
 .Works_Tagline {
   color: #b88b7a;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 2rem;
   font-weight: 400;
-  margin-left: 0.95rem;
+  /* Removed margin-left */
   text-align: left;
 }
 
@@ -122,38 +126,25 @@
   background: none;
 }
 
-/* Card image styling */
-.card-image {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  border-radius: 16px;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-  background: #f6f6f6;
-}
-
-/* Card details */
 .Works_ProjectDetails {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   width: 100%;
+  text-align: left; /* Ensure all text is left-aligned */
 }
 
 .ProjectNumber {
   color: #b88b7a;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-family: 'Poppins', sans-serif;
 }
 
 .ProjectTitle {
   color: #984a3d;
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   margin: 0.5rem 0;
@@ -168,12 +159,12 @@
 }
 
 .ProjectDescription {
-  display: flex;
   color: #b88b7a;
   font-size: 1rem;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 1.2rem;
   font-weight: 400;
+  text-align: left;
 }
 
 .ReadCaseStudyBtn {
@@ -189,12 +180,14 @@
   font-weight: 500;
   cursor: pointer;
   margin-top: 0.5rem;
+  text-decoration: none;
   transition: background 0.2s;
   box-shadow: 0 2px 6px rgba(255,136,46,0.08);
 }
 
 .ReadCaseStudyBtn:hover {
   background: #e06d13;
+
 }
 
 /* Fade In and Out Animations */
@@ -211,15 +204,18 @@
 /* Responsive adjustments */
 @media (max-width: 900px) {
   .Main_Section_Titles {
-    margin: 0.5rem 2rem;
+    margin: 2rem 1rem 2.5rem 1rem; /* More balanced on mobile */
     font-size: 2.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .MyWorks_Section {
+    padding: 0 1rem;
+    margin-bottom: 2rem;
   }
   .Works_CardRow {
     grid-template-columns: 1fr;
     gap: 1.5rem;
-  }
-  .MyWorks_Section {
-    padding: 0 1rem;
   }
   .card-image {
     max-width: 100%;
