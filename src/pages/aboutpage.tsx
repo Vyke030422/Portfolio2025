@@ -1,7 +1,10 @@
-import{ useState } from "react";
+import { useState } from "react";
 import Navigation from "../components/navigation";
 import Footer from "../components/footer";
 import styles from "./aboutpage.module.css";
+import KevinImg from "../assets/images/Kevin.jpg";
+import TesdaImg from "../assets/images/TESDA.jpg";
+import TechstarsImg from "../assets/images/Techstars.jpg";
 
 export default function AboutPage() {
   const [lightboxImg, setLightboxImg] = useState<string | null>(null);
@@ -31,12 +34,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div className={styles.AboutImageBlock}>
-            <div className={styles.ImagePlaceholder}>
-              <img
-                src="src/assets/images/Kevin.jpg"
-                alt="Kevin Kurt Intong"
-              />
-            </div>
+            <img src={KevinImg} alt="Kevin Kurt Intong" />
           </div>
         </section>
 
@@ -76,7 +74,7 @@ export default function AboutPage() {
               title="Click to view full image"
             >
               <img
-                src="src/assets/images/TESDA.jpg"
+                src={TesdaImg}
                 alt="TESDA Graphic Design Competition"
               />
             </div>
@@ -95,7 +93,7 @@ export default function AboutPage() {
               title="Click to view full image"
             >
               <img
-                src="src/assets/images/Techstars.jpg"
+                src={TechstarsImg}
                 alt="Davao TechStars Startup Competition"
               />
             </div>

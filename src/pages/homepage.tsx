@@ -6,6 +6,11 @@ import { FacebookIcon, LinkedinIcon, InstagramIcon } from "lucide-react";
 import Footer from "../components/footer";
 import { Link, useLocation } from "react-router-dom";
 
+// Import images for projects
+import CancerLineImg from "../assets/images/CancerLine.png";
+import IslandBoiImg from "../assets/images/IslandBoi.png";
+import MindSpaceImg from "../assets/images/MindSpace.png";
+
 export default function HomePage() {
   const [designerRole, setDesignerRole] = useState("UX Designer");
   const [fade, setFade] = useState(true);
@@ -74,7 +79,7 @@ export default function HomePage() {
               {/* Project 1 */}
               <div className={style.Works_CardRow}>
                 <CardImage
-                  image="src/assets/images/CancerLine.png"
+                  image={CancerLineImg}
                   imageAlt="CancerLine Companion"
                   badge="Health Care Mobile UX"
                 />
@@ -93,7 +98,7 @@ export default function HomePage() {
               {/* Project 2 */}
               <div className={style.Works_CardRow}>
                 <CardImage
-                  image="src/assets/images/IslandBoi.png"
+                  image={IslandBoiImg}
                   imageAlt="Island Boi"
                   badge="Travel & Hospitality Website UX"
                 />
@@ -119,8 +124,8 @@ export default function HomePage() {
                {/* Project 3 */}
               <div className={style.Works_CardRow}>
                 <CardImage
-                  image="src/assets/images/MindSpace.png"
-                  imageAlt="Island Boi"
+                  image={MindSpaceImg}
+                  imageAlt="MindSpace"
                   badge="Health & Wellness technology mobile UX"
                 />
                 <div className={style.Works_ProjectDetails}>

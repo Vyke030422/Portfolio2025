@@ -4,6 +4,15 @@ import styles from "./canlinecasestudy.module.css";
 import Footer from "../components/footer";
 import Navigation from "../components/navigation";
 
+// Import all images used in this file
+import Coverphoto from "../assets/images/Coverphoto.png";
+import Wireframe1 from "../assets/images/Wireframe1.png";
+import LofiWireframe2 from "../assets/images/LofiWireframe2.png";
+import PrototypeImg from "../assets/images/Prototype.png";
+import DesignSystem from "../assets/images/DesignSystem.png";
+import IslandBoi from "../assets/images/IslandBoi.png";
+import MindSpace from "../assets/images/MindSpace.png";
+
 function Section({ title, subtitle, children }: { title: string; subtitle?: string; children: React.ReactNode }) {
   return (
     <section className={styles.CaseStudySection}>
@@ -184,7 +193,7 @@ export default function CanlineCaseStudy() {
             </a>
           </div>
           <div className={styles.CaseStudyHeaderImage}>
-            <img src="src/assets/images/Coverphoto.png" alt="CancerLine App Mockup" />
+            <img src={Coverphoto} alt="CancerLine App Mockup" />
           </div>
         </div>
 
@@ -255,7 +264,7 @@ export default function CanlineCaseStudy() {
             </div>
             <img
               className={styles.CaseStudyImageFull}
-              src="src/assets/images/Wireframe1.png"
+              src={Wireframe1}
               alt="Wireframe 1.0"
             />
             <div className={styles.CaseStudyWireframeTitle}>
@@ -263,7 +272,7 @@ export default function CanlineCaseStudy() {
             </div>
             <img
               className={styles.CaseStudyImageFull}
-              src="src/assets/images/LofiWireframe2.png"
+              src={LofiWireframe2}
               alt="Wireframe 2.0"
             />
           </Section>
@@ -272,7 +281,7 @@ export default function CanlineCaseStudy() {
           <Section title="Prototype">
             <img
               className={styles.CaseStudyImageFull}
-              src="src/assets/images/Prototype.png"
+              src={PrototypeImg}
               alt="Prototype"
             />
           </Section>
@@ -281,8 +290,8 @@ export default function CanlineCaseStudy() {
           <Section title="Visual Design">
             <img
               className={styles.CaseStudyImageFull}
-              src="src/assets/images/DesignSystem.png"
-              alt="Prototype"
+              src={DesignSystem}
+              alt="Design System"
             />
           </Section>
         </div>
@@ -344,7 +353,7 @@ export default function CanlineCaseStudy() {
               rel="noopener noreferrer"
               style={{ textDecoration: "none" }}
             >
-              <img src="src/assets/images/IslandBoi.png" alt="Island Boi" />
+              <img src={IslandBoi} alt="Island Boi" />
               <div className={styles.MoreProjectInfo}>
                 <div className={styles.MoreProjectName}>Island Boi</div>
                 <div className={styles.MoreProjectRole}>UI/UX Web Designer</div>
@@ -367,7 +376,7 @@ export default function CanlineCaseStudy() {
                 if (e.key === "Enter" || e.key === " ") setShowModal(true);
               }}
             >
-              <img src="src/assets/images/MindSpace.png" alt="MindSpace" />
+              <img src={MindSpace} alt="MindSpace" />
               <div className={styles.MoreProjectInfo}>
                 <div className={styles.MoreProjectName}>MindSpace</div>
                 <div className={styles.MoreProjectRole}>UI/UX Designer</div>
