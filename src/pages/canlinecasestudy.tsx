@@ -138,7 +138,7 @@ export default function CanlineCaseStudy() {
   const [showBubbleNav, setShowBubbleNav] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
-  const handleScrollTo = (ref: React.RefObject<HTMLDivElement>) => {
+  const handleScrollTo = (ref: React.RefObject<HTMLDivElement | null>) => {
     if (ref.current) {
       const y = ref.current.getBoundingClientRect().top + window.scrollY - 56;
       window.scrollTo({ top: y, behavior: "smooth" });
@@ -152,7 +152,7 @@ export default function CanlineCaseStudy() {
 
   return (
     <>
-      <header>
+      <header className={styles.Header}>
         <Navigation />
       </header>
       <main className={styles.CaseStudyContainer}>
@@ -337,7 +337,13 @@ export default function CanlineCaseStudy() {
           <h3 className={styles.MoreProjectsTitle}>More Projects</h3>
           <div className={styles.MoreProjectsGrid}>
             {/* Project 1 */}
-            <a href="https://www.figma.com/proto/MDrZtXMUuArd9rGhfpQlpp/Project-IB-Design?page-id=0%3A1&node-id=1-4&viewport=279%2C308%2C0.4&t=k42wnQxMltYl5XIU-1&scaling=min-zoom&content-scaling=fixed" className={styles.MoreProjectCard}>
+            <a
+              href="https://www.figma.com/proto/MDrZtXMUuArd9rGhfpQlpp/Project-IB-Design?page-id=0%3A1&node-id=1-4&viewport=279%2C308%2C0.4&t=k42wnQxMltYl5XIU-1&scaling=min-zoom&content-scaling=fixed"
+              className={styles.MoreProjectCard}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
+            >
               <img src="src/assets/images/IslandBoi.png" alt="Island Boi" />
               <div className={styles.MoreProjectInfo}>
                 <div className={styles.MoreProjectName}>Island Boi</div>
@@ -345,15 +351,9 @@ export default function CanlineCaseStudy() {
                 <div className={styles.MoreProjectDesc}>
                   A tropical resort website focused on seamless booking and immersive travel experiences.
                 </div>
-                <a
-                  className={styles.MoreProjectBtn}
-                  href="https://www.figma.com/proto/MDrZtXMUuArd9rGhfpQlpp/Project-IB-Design?page-id=0%3A1&node-id=1-4&viewport=279%2C308%2C0.4&t=k42wnQxMltYl5XIU-1&scaling=min-zoom&content-scaling=fixed"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: "none" }}
-                >
+                <div className={styles.MoreProjectBtn}>
                   View Prototype
-                </a>
+                </div>
               </div>
             </a>
             {/* Project 2 */}

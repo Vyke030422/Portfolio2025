@@ -1,3 +1,10 @@
+.Header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fff;
+}
+
 .ContactMain {
   display: flex;
   align-items: center;

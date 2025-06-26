@@ -6,7 +6,7 @@ import styles from "./contact.module.css";
 export default function ContactPage() {
   return (
     <>
-      <header>
+      <header className={styles.Header}>
         <Navigation />
       </header>
       <main className={styles.ContactMain}>

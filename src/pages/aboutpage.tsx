@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import{ useState } from "react";
 import Navigation from "../components/navigation";
 import Footer from "../components/footer";
 import styles from "./aboutpage.module.css";
@@ -11,7 +11,7 @@ export default function AboutPage() {
 
   return (
     <>
-      <header>
+      <header className={styles.Header}>
         <Navigation />
       </header>
       <main className={styles.AboutMain}>
