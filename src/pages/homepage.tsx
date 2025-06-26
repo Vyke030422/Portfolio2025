@@ -4,6 +4,7 @@ import Navigation from "../components/navigation";
 import style from "./homepage.module.css";
 import { FacebookIcon, LinkedinIcon, InstagramIcon } from "lucide-react";
 import Footer from "../components/footer";
+import { Link } from "react-router-dom";
 
 export default function HomePage() {
   const [designerRole, setDesignerRole] = useState("UX Designer");
@@ -73,7 +74,9 @@ export default function HomePage() {
                   <div className={style.ProjectDescription}>
                     A mobile companion app that helps Filipino cancer patients and companions on their treatment journey.
                   </div>
-                  <button className={style.ReadCaseStudyBtn}>Read Case Study</button>
+                  <Link to="/cancerline-casestudy" className={style.ReadCaseStudyBtn}>
+                    Read Case Study
+                  </Link>
                 </div>
               </div>
               {/* Project 2 */}

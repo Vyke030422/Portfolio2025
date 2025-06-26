@@ -1,0 +1,558 @@
+.CaseStudyContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 0 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: #9c5b4a;
+  background: #fff;
+}
+
+.CaseStudyHeaderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 3.5rem;
+}
+
+.CaseStudyHeaderInfo {
+  flex: 1;
+  min-width: 320px;
+  margin-top: 1rem;
+}
+
+.CaseStudyYear {
+  color: #F97F31;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.12em;
+  margin-bottom: 2rem;
+}
+
+.CaseStudyTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  color: #984a3d;
+  letter-spacing: 0.03em;
+}
+
+.CaseStudySubtitle {
+  color: #F97F31;
+  font-size: 0.8rem;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+
+.CaseStudyMeta {
+  font-size: 1rem;
+  color: #b88b7a;
+  margin-bottom: 0.7rem;
+  line-height: 2;
+}
+
+.CaseStudyButton {
+  background: #F97F31;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 6px rgba(255,136,46,0.08);
+  letter-spacing: 0.04em;
+}
+
+.CaseStudyButton:hover {
+  background: #F97F31;
+  box-shadow: 0 4px 12px rgba(255,136,46,0.13);
+}
+
+.CaseStudyHeaderImage {
+  width: 400px;
+  min-width: 200px;
+  height: 400px;
+ 
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.CaseStudyHeaderImage img {
+  width: 90%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
+}
+
+.CaseStudySection {
+  margin-bottom: 3.5rem;
+}
+
+.CaseStudySectionTitle {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #984a3d;
+  margin-bottom: 1.1rem;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.CaseStudySectionSubtitle {
+  color: #b88b7a;
+  font-size: 1.02rem;
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.CaseStudyText {
+  color: #7a7a7a;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.CaseStudyList {
+  margin: 0.5rem 0 1.5rem 1.5rem;
+  color: #7a7a7a;
+  font-size: 1rem;
+  line-height: 1.7;
+  text-align: left;
+  padding-left: 1.2em;
+}
+
+.CaseStudyList li {
+  margin-bottom: 0.5em;
+  list-style: disc;
+}
+
+.CaseStudyProcess {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 2.5rem 0 2rem 0;
+  flex-wrap: wrap;
+}
+
+.CaseStudyProcessStep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #b88b7a;
+  min-width: 70px;
+}
+
+.CaseStudyProcessStepCircle {
+  border: 2px solid #F97F31;
+  color: #F97F31;
+  background: #fff;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  transition: box-shadow 0.2s, background 0.2s;
+  box-shadow: 0 2px 8px rgba(249,127,49,0.08);
+}
+
+.CaseStudyProcessStepLabel {
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #b88b7a;
+}
+
+.CaseStudyImageFull {
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+  display: block;
+  object-fit: contain;
+  background: #f6f6f6;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+
+.CaseStudyWireframeTitle {
+  font-size: 1.08rem;
+  color: #b88b7a;
+  font-weight: 600;
+  margin: 2rem 0 1rem 0;
+  letter-spacing: 0.03em;
+}
+
+.CaseStudyTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 1rem;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+}
+
+.CaseStudyTable th,
+.CaseStudyTable td {
+  border: 1px solid #eaeaea;
+  padding: 0.7rem 1rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.CaseStudyTable th {
+  background: #f6f6f6;
+  color: #b88b7a;
+  font-weight: 700;
+}
+
+.CaseStudyTable td {
+  color: #984a3d;
+}
+
+/* User Flow Diagram Styles */
+.UserFlowDiagram {
+  background: #faf9f8;
+  border-radius: 16px;
+  padding: 2.5rem 1rem 2rem 1rem;
+  margin: 2rem auto 2rem auto;
+  max-width: 900px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.98rem;
+}
+
+.UserFlowRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+  gap: 0.5rem;
+}
+
+.UserFlowBox {
+  background: #fff;
+  border: 2px solid #cdb6f6;
+  color: #8c5fc2;
+  border-radius: 12px;
+  padding: 0.8em 1.3em;
+  min-width: 130px;
+  text-align: center;
+  font-weight: 500;
+  margin: 0 0.2em;
+  box-shadow: 0 2px 8px rgba(140,95,194,0.07);
+  position: relative;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.UserFlowBoxStart {
+  border-color: #F97F31;
+  color: #F97F31;
+  font-weight: 700;
+  background: #fff7f0;
+}
+
+.UserFlowBoxHome {
+  border-color: #ff882e;
+  color: #ff882e;
+  font-weight: 700;
+  background: #fff7f0;
+}
+
+.UserFlowBoxUniversal {
+  border-color: #b88b7a;
+  color: #b88b7a;
+  background: #fff7f0;
+  margin-top: 1.5rem;
+  font-size: 0.97rem;
+  text-align: left;
+  min-width: 260px;
+}
+
+.UserFlowNote {
+  display: block;
+  color: #b88b7a;
+  font-size: 0.92em;
+  margin-top: 0.2em;
+  font-weight: 400;
+}
+
+.UserFlowArrow {
+  font-size: 1.5em;
+  color: #b88b7a;
+  margin: 0 0.2em;
+  font-weight: 700;
+  user-select: none;
+}
+
+.UserFlowArrowDown {
+  text-align: center;
+  font-size: 1.3em;
+  color: #b88b7a;
+  margin: 0.1em 0;
+  font-weight: 700;
+  user-select: none;
+}
+
+.UserFlowGridWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.UserFlowGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem 3.5rem;
+  width: 100%;
+  max-width: 700px;
+}
+
+.UserFlowCardTitle {
+  font-weight: 700;
+  color: #F97F31;
+  margin-bottom: 0.3em;
+  font-size: 1.05em;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
+.UserFlowUniversal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+/* Vertical User Flow */
+.UserFlowVertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem 0.5rem 2rem 0.5rem;
+  margin: 2rem auto 2rem auto;
+  max-width: 900px;
+  box-shadow: none;
+  border: 1px solid #f3e7e2;
+}
+
+.UFRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.UFBox {
+  background: #fff;
+  border: 1.5px solid #f3e7e2;
+  color: #9c5b4a;
+  border-radius: 8px;
+  padding: 0.65em 1em;
+  min-width: 160px;
+  text-align: center;
+  font-weight: 400;
+  margin: 0.18em 0;
+  box-shadow: none;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+  transition: border-color 0.2s, background 0.2s;
+  word-break: break-word;
+}
+
+.UFStart,
+.UFHome,
+.UFCard {
+  border-color: #F97F31;
+  color: #F97F31;
+  background: #fff7f0;
+  font-weight: 500;
+}
+
+.UFDecision {
+  border-color: #f3e7e2;
+  color: #b88b7a;
+  background: #fcf8f6;
+  font-weight: 400;
+}
+
+.UFNote {
+  display: block;
+  color: #b88b7a;
+  font-size: 0.93em;
+  margin-top: 0.18em;
+  font-weight: 400;
+  opacity: 0.85;
+  line-height: 1.5;
+}
+
+.UFUniversal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.UFUniversalBox {
+  border-color: #f3e7e2;
+  color: #b88b7a;
+  background: #fcf8f6;
+  margin-top: 1.5rem;
+  font-size: 0.97rem;
+  text-align: left;
+  min-width: 220px;
+  font-weight: 400;
+  box-shadow: none;
+  border-radius: 8px;
+  padding: 1em 1.2em;
+}
+
+.UFUniversalBox ul {
+  margin: 0.5em 0 0 1.2em;
+  padding: 0;
+  color: #b88b7a;
+  font-size: 0.97rem;
+}
+
+.UFTreeDiagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem 0.5rem 2rem 0.5rem;
+  margin: 2rem auto 2rem auto;
+  max-width: 900px;
+  border: 1px solid #f3e7e2;
+  position: relative;
+}
+
+.UFColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.UFLineV {
+  width: 2px;
+  height: 24px;
+  background: #e3cfc7;
+  margin: 0 auto;
+}
+
+.UFLineSplit {
+  width: 100%;
+  height: 20px;
+  border-bottom: 2px solid #e3cfc7;
+  position: relative;
+  margin-bottom: -10px;
+  margin-top: 0.5em;
+}
+
+.UFBranchesRow {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  width: 100%;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.UFBranchCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0;
+  min-width: 170px;
+}
+
+@media (max-width: 1100px) {
+  .CaseStudyHeaderRow {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .CaseStudyHeaderRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  .CaseStudyHeaderImage {
+    width: 100%;
+    height: auto;
+    min-height: 180px;
+  }
+  .CaseStudyImageFull {
+    max-width: 100%;
+  }
+  .CaseStudyContainer {
+    padding: 2rem 0.5rem 0 0.5rem;
+  }
+  .UserFlowRowCards {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .UserFlowDiagram {
+    padding: 1rem 0.2rem;
+  }
+  .UserFlowGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 350px;
+  }
+  .UFBranches {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .UserFlowVertical {
+    padding: 1rem 0.2rem;
+  }
+  .UFBranch {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+.CaseStudyProcessStep:nth-child(1) { animation-delay: 0.1s; }
+.CaseStudyProcessStep:nth-child(2) { animation-delay: 0.2s; }
+.CaseStudyProcessStep:nth-child(3) { animation-delay: 0.3s; }
+.CaseStudyProcessStep:nth-child(4) { animation-delay: 0.4s; }
+.CaseStudyProcessStep:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.UFBox:hover {
+  background: #fcf8f6;
+  border-color: #F97F31;
+  color: #F97F31;
+}
