@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import CardImage from "../components/cardimage";
 import Navigation from "../components/navigation";
 import style from "./homepage.module.css";
