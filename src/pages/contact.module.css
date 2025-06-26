@@ -161,23 +161,61 @@
   margin-top: 2rem;
 }
 
+/* Tablet adjustments */
 @media (max-width: 900px) {
+  .ContactMain {
+    padding: 3rem 1rem 3rem 1rem;
+  }
   .ContactLandscape {
     flex-direction: column;
-    max-width: 98vw;
-    margin: 1.5rem auto;
-  }
-  .ContactInfo,
-  .ContactFormSection {
-    padding: 1.5rem 1rem;
-    border-right: none;
-    border-bottom: 1px solid #f3e7e2;
+    align-items: center;
+    gap: 2rem;
   }
   .ContactFormSection {
-    border-bottom: none;
-    align-items: stretch;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .ContactMain {
+    padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+  }
+  .ContactLandscape {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    margin: 1rem auto;
+  }
+  .ContactInfo {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .ContactFormSection {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
   }
   .ContactForm {
-    max-width: 100%;
+    width: 100%;
+  }
+  .Label {
+    width: 100%;
+    font-size: 0.97rem;
+  }
+  .Input,
+  .Textarea {
+    width: 100%;
+    font-size: 0.97rem;
+    padding: 0.5rem;
+    margin-bottom: 0.7rem;
+  }
+  .SubmitBtn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.6rem 0;
+    margin-top: 0.5rem;
   }
 }

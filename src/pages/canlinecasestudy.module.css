@@ -683,6 +683,64 @@
   }
 }
 
+/* Tablet adjustments */
+@media (max-width: 900px) {
+  .CaseStudyContainer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .CaseStudyHeaderRow {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  .CaseStudyHeaderImage img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 18px;
+  }
+  .CaseStudySection {
+    padding: 1rem 0;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .CaseStudyContainer {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .CaseStudyHeaderRow {
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+  }
+  .CaseStudyHeaderImage img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 14px;
+  }
+  .CaseStudySectionTitle {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 0.7rem;
+  }
+  .CaseStudySectionSubtitle {
+    font-size: 0.97rem;
+    text-align: center;
+    margin-bottom: 0.7rem;
+  }
+  .CaseStudyImageFull {
+    width: 100%;
+    max-width: 98vw;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto 1rem auto;
+  }
+}
+
 @media (max-width: 900px) {
   .CaseStudyHeaderRow {
     flex-direction: column;
