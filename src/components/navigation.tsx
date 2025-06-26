@@ -1,5 +1,6 @@
 import style from "./navigation.module.css";
 import { Link, useLocation } from "react-router-dom";
+import LogoImg from "../assets/images/Logo.png";
 
 function easeInQuad(t: number) {
   return t * t;
@@ -40,7 +41,7 @@ export default function Navigation() {
       <div className={style.navbar_logo}>
         <Link to="/" onClick={handleLogoClick}>
           <img
-            src="src/assets/images/Logo.png"
+            src={LogoImg}
             alt="Logo"
             className={style.logoImg}
           />
