@@ -7,7 +7,7 @@ import Navigation from "../components/navigation";
 // Import all images used in this file
 import Coverphoto from "../assets/images/Coverphoto.png";
 import Wireframe1 from "../assets/images/Wireframe1.png";
-import LofiWireframe2 from "../assets/images/LofiWireframe2.png";
+import Wireframe2 from "../assets/images/Wireframe2.png";
 import PrototypeImg from "../assets/images/Prototype.png";
 import DesignSystem from "../assets/images/DesignSystem.png";
 import IslandBoi from "../assets/images/IslandBoi.png";
@@ -272,7 +272,7 @@ export default function CanlineCaseStudy() {
             </div>
             <img
               className={styles.CaseStudyImageFull}
-              src={LofiWireframe2}
+              src={Wireframe2}
               alt="Wireframe 2.0"
             />
           </Section>
